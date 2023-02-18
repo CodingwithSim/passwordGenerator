@@ -1,0 +1,39 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;800&display=swap" rel="stylesheet">
+    <body>
+        <div class="container">
+            <div class="upContent">
+                <h1 class="heading">Generate a <br><span>random password</span></h1>
+                <p>Never use an insecure password again.</p>
+                <!-- <form class="form" -->
+                    <div class="char-amount-container">
+                        <label for="charAmountNumber">Number of Characters:</label>
+                        <input type="range" min="6" max="15" value="15" id="charAmountRange" class="styled-slider slider-progress">
+                        <input  class="number-input" type="number" min="6" max="15" value="15" id="charAmountNumber">
+                    </div>
+                    <!-- <label for="includeUppercase">Include Uppercase</label>
+                    <input type="checkbox" id="includeUppercase">
+                    
+                    <label for="includeNumbers">Include Uppercase</label>
+                    <input type="checkbox" id="includeNumbers">
+                
+                    <label for="includeSymbols">Include Uppercase</label>
+                    <input type="checkbox" id="includeSymbols">
+                    
+                </form>     -->
+                <button id="genPassword">Generate Passwords</button>   
+            </div>
+            
+            <div class="downContent">
+                <input type="text" name="leftText" id="leftText" class="outputText">
+                <input type="text" name="rightText" id="rightText" class="outputText">
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
